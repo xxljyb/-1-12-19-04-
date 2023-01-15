@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"switch_matrix\startup_stm32f429xx.o"
+"switch_matrix\main.o"
+"switch_matrix\gpio.o"
+"switch_matrix\usart.o"
+"switch_matrix\stm32f4xx_it.o"
+"switch_matrix\stm32f4xx_hal_msp.o"
+"switch_matrix\stm32f4xx_hal_tim.o"
+"switch_matrix\stm32f4xx_hal_tim_ex.o"
+"switch_matrix\stm32f4xx_hal_uart.o"
+"switch_matrix\stm32f4xx_hal_rcc.o"
+"switch_matrix\stm32f4xx_hal_rcc_ex.o"
+"switch_matrix\stm32f4xx_hal_flash.o"
+"switch_matrix\stm32f4xx_hal_flash_ex.o"
+"switch_matrix\stm32f4xx_hal_flash_ramfunc.o"
+"switch_matrix\stm32f4xx_hal_gpio.o"
+"switch_matrix\stm32f4xx_hal_dma_ex.o"
+"switch_matrix\stm32f4xx_hal_dma.o"
+"switch_matrix\stm32f4xx_hal_pwr.o"
+"switch_matrix\stm32f4xx_hal_pwr_ex.o"
+"switch_matrix\stm32f4xx_hal_cortex.o"
+"switch_matrix\stm32f4xx_hal.o"
+"switch_matrix\stm32f4xx_hal_exti.o"
+"switch_matrix\system_stm32f4xx.o"
+--strict --scatter "Switch_matrix\Switch_matrix.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Switch_matrix.map" -o Switch_matrix\Switch_matrix.axf
